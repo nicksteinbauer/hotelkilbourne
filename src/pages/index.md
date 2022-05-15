@@ -1,10 +1,9 @@
 ---
 templateKey: index-page
-title: Don't Divide Sandusky
-image: /img/dont-divide-sandusky-background.jpg
+title: Hotel Kilbourne
+image: /img/img_4461.png
 topimage: /img/No-Main-Logo.png
-description: >-
-  Issue 2 is Bad for Sandusky
+description: Issue 2 is Bad for Sandusky
 ---
 
 Issue 2 would unnecessarily change our current cohesive government structure into political fiefdoms.  Our current at-large City government system is working and change simply doesn’t make sense.

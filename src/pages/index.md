@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Hotel Kilbourne
+title: Experience Sandusky
 image: /img/img_4461.png
 topimage: /img/No-Main-Logo.png
-description: Issue 2 is Bad for Sandusky
+description: where a great lake meets a great hotel
 ---
 
 Issue 2 would unnecessarily change our current cohesive government structure into political fiefdoms.  Our current at-large City government system is working and change simply doesn’t make sense.

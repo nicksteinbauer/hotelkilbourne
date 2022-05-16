@@ -1,86 +1,53 @@
 // home page styles..
 
 .full-site-image {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
-  img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    margin: auto; 
-    min-width: 50%;
-    min-height: 50%;
-  }
-}
-
-.mystuff {
-  background: #a22135;
-  position: relative;
-  -webkit-box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
-  box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
-  
-}
-.center-this {
   position: absolute;
   height: 100%;
   width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  @media screen and (min-width: $screen-md) {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-
-.modal-dialog {
-  max-width: 992px !important;
-  margin: 20px;
-  h1 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  @media screen and (min-width: $screen-md) and (orientation: portrait) {
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  @media screen and (min-width: $screen-md) and (orientation: landscape) {
-    margin: 40px auto;
-  }
-}
-
-.modal-content {
-  position: relative;
-  .modal-header {
+  background-color: #000;
+  img {
+    display: block;
     position: absolute;
-    right: 15px;
-    top: 12px;
-    z-index: 10;
-    border-bottom: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 !important;
+    opacity: .8;
+  }
+  #hero {
+    position: relative;
+    z-index: 9;
   }
 }
 
-.buttons {
-  button {
-    margin: 20px;
-  }
-}
-.btn-warning {
-  background: #fff;
-  color: #a22135;
+
+
+.content {
+  position: relative;
 }
 
-label.padding {
-  display: block;
+.top-gradient {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+width: 100%;
+height: 100px;
+position: absolute;
+z-index: 2;
+top: 60px;
+}
+
+
+#hero {
+  h1 {
+    line-height: 1;
+    margin-bottom: 0;
+    text-shadow: 0 3px 3px #000;
+  }
+  h2 {
+    color: #fff;
+    text-shadow: 0 5px 5px #000;
+  }
 }

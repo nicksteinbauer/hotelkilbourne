@@ -1,0 +1,48 @@
+
+
+h1 {
+    font-weight: 400;
+    padding: 5px;
+    color: $gold;
+    font-family: $alexbrush;
+}
+h2 {
+    font-family: $baskerville;
+    font-weight: 700;
+}
+
+
+h1 {
+    font-size: 4em !important;
+    @media screen and (min-width: $screen-md) {
+        font-size: 6.5em !important;
+    }
+}
+
+h2 {
+    font-size: 1.7em !important;
+    @media screen and (min-width: $screen-md) {
+        font-size: 2.7em !important;
+    }
+}
+
+h2.ms-checkout__guided-card-title {
+    font-size: 1.9em !important;
+    @media screen and (min-width: $screen-md) {
+        font-size: 2.4em !important;
+    }
+}
+
+h3 {
+    font-size: 1.9em !important;
+    @media screen and (min-width: $screen-md) {
+        font-size: 2.4em !important;
+    }
+}
+
+h4 {
+    font-size: 1.3em !important;
+    @media screen and (min-width: $screen-md) {
+        font-size: 1.7em !important;
+    }
+}

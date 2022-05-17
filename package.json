@@ -23,6 +23,8 @@
     "gatsby-source-filesystem": "^2.2.5",
     "gatsby-transformer-remark": "^2.7.5",
     "gatsby-transformer-sharp": "^2.4.7",
+    "jquery": "^3.6.0",
+    "jquery-ui-dist": "^1.12.1",
     "lines-to-paragraphs": "^1.0.3",
     "lodash": "^4.17.15",
     "lodash-webpack-plugin": "^0.11.4",

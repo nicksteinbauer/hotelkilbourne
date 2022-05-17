@@ -130,20 +130,52 @@ $translateX: 0;
 
 
 .navigation {
-  position: fixed;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 250px 0 0 0;
-  overflow: scroll;
-  background: #000;
-
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 250px 0 0 0;
+    overflow: scroll;
+    background: #000;
+    font-family: $baskerville;
+    font-size: 1.4em;
+    a {
+        transition: color .4s ease;
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        display: inline-block;
+    }
+    a::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 60%;
+        bottom: 5px;
+        background: $gold;
+        margin: 0 20%;
+        left: 0;
+        transition: all .4s ease;
+    }
+    a:link, a:active, a:visited {
+        color: #fff;
+    }
+    a:hover {
+        color: $gold;
+    }
+    a:hover::after {
+        width: 80%;
+        margin: 0 10%;
+    }
   ul {
     margin: 0;
     padding: 0;
+    list-style: none;
+    
   }
   .nav-buffer {
     height: 100%;
@@ -152,6 +184,27 @@ $translateX: 0;
     > div {
       height: 100%;
     }
+  }
+
+  .social {
+      text-align: center;
+      margin-top: 40px;
+      justify-content: center;
+      a {
+          padding: 10px;
+          img {
+              width: 48px;
+              height: 48px;
+              padding: 5px;
+              box-sizing: border-box;
+              display: block;
+          }
+      }
+      a::after {
+          height: 0;
+          width: 0;
+          margin: 0;
+      }
   }
 }
 

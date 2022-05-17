@@ -12,20 +12,19 @@ function NavBoot() {
 
         <>
         <ul>
-            <li><Link to="/landscape-contracting/all-services">All Services</Link></li>
-            <li><Link to="/landscape-contracting/landscape-design-build">Landscape Design &amp; Build</Link></li>
-            <li><Link to="/landscape-contracting/landscape-maintenance">Landscape Maintenance</Link></li>
-            <li><Link to="/landscape-contracting/insect-disease-control">Insect &amp; Disease Control</Link></li>
-            <li><Link to="/landscape-contracting/new-lawn-installation">New Lawn Installation</Link></li>
-            <li><Link to="/landscape-contracting/lawn-fertilization">Lawn Fertilization</Link></li>
-            <li><Link to="/landscape-contracting/tree-services">Tree Services</Link></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/rooms">Rooms</Link></li>
+            <li><Link to="/reservations">Reservations</Link></li>
+            <li><Link to="/amenities">Amenities</Link></li>
+            <li><Link to="/directions">Directions</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
         </ul>
-        <div className="accordion__section flex-md">
-            <div className="menu-content social">
+        <div className="accordion__section inside-xs">
+            <div className="menu-content social always-flex">
                 
-                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/barnesnursery"><img src={facebook} alt="Facebook Link" /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/barnes_nursery/"><img src={instagram} alt="Instagram Link" /></a>
-                <a target="_blank" rel="noreferrer" href="https://twitter.com/barnesnursery"><img src={twitter} alt="Twitter Link" /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/hotelkilbourne"><img src={facebook} alt="Facebook Link" /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/hotelkilbourne/?hl=en"><img src={instagram} alt="Instagram Link" /></a>
+                <a target="_blank" rel="noreferrer" href="https://twitter.com/hotelkilbourne"><img src={twitter} alt="Twitter Link" /></a>
                 
             </div>
         </div>

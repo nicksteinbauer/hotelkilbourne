@@ -1,0 +1,45 @@
+.modal {
+    .title {
+      font-family: $alexbrush;
+      color: $gold;
+      line-height: 1;
+      font-size: 2em !important;
+      @media screen and (min-width: $screen-md) {
+          font-size: 2.6em !important;
+      }
+    }
+    .modal-title {
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+    button.close {
+      background: none;
+      border: none;
+      font-size: 2.5em;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin: 10px 0;
+            span {
+                padding: 0 5px;
+            }
+            input, select {
+                width: 100%;
+                background: $ltgray;
+                border-radius: 2px;
+                border: 2px solid $ltgray;
+                display: block;
+                padding: 4px;
+            }
+        }
+        input[type="submit"] {
+            height: 100%;
+            background: $gold;
+            border-color: $gold;
+        }
+    }
+  }

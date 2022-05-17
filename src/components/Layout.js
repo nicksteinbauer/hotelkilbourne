@@ -38,6 +38,11 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
           color="#ff4400"
         />
+
+        <link 
+          rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css'
+        />
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />

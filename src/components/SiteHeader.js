@@ -1,15 +1,21 @@
-import React from "react"
-import { Link } from "gatsby"
-import Menu from "../components/menu"
+import React, { useState } from 'react';
+import { Link } from "gatsby";
+import Reservationsnew from './Reservation';
+import Menu from "../components/menu";
 import logo1 from "../../static/img/Kilbourne-Logo-web-ready.png";
 import { 
-    //Modal, ModalHeader, ModalBody, 
+    Modal, ModalHeader, ModalBody, 
     Button 
 } from 'reactstrap';
 
 const SiteHeader = () => {
+
+    const [modal, setModal] = useState(false);
+    const toggle = () => setModal(!modal);
+
+
   
-  return (
+    return (
       
         <header className="main-header">
             <div className="always-flex justify inside-xl">
@@ -21,14 +27,31 @@ const SiteHeader = () => {
                 </Link>
                 </div>
                 <div className="button-holder flex-vertical">
-                    <Button className="button-book" color="warning" size="md">Learn More</Button>
+                    <Button className="button-book" color="warning" size="md" onClick={toggle}>Learn More</Button>
                 </div>
 
             </div>
+            <Modal isOpen={modal} toggle={toggle} >
+                <ModalHeader toggle={toggle}>
+                    <span className="title">Modal Header</span>
+                </ModalHeader>
+                <ModalBody>
+
+                <div className="modal-window">
+                    <div className="text-center">
+                    
+                    </div>
+                    <div className="padding-10">
+                    <Reservationsnew />
+                    </div>
+                </div>
+
+                </ModalBody>
+            </Modal>
         </header>
         
     
-  )
+    )
 }
 
 export default SiteHeader

@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Content, { HTMLContent } from '../components/Content'
+import 
+//Content, 
+{ HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Layout from '../components/Layout'
 
@@ -9,7 +11,7 @@ import Layout from '../components/Layout'
 //import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({ image, title, description, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+  //const PageContent = contentComponent || Content
 
   
   return (

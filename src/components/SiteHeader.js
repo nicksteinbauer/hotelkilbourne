@@ -27,20 +27,17 @@ const SiteHeader = () => {
                 </Link>
                 </div>
                 <div className="button-holder flex-vertical">
-                    <Button className="button-book" color="warning" size="md" onClick={toggle}>Learn More</Button>
+                    <Button className="button-book" color="warning" size="md" onClick={toggle}>Book Now</Button>
                 </div>
 
             </div>
             <Modal isOpen={modal} toggle={toggle} >
                 <ModalHeader toggle={toggle}>
-                    <span className="title">Modal Header</span>
+                    <span className="title">Reservations</span>
                 </ModalHeader>
                 <ModalBody>
 
                 <div className="modal-window">
-                    <div className="text-center">
-                    
-                    </div>
                     <div className="padding-10">
                     <Reservationsnew />
                     </div>

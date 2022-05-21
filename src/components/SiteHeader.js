@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "gatsby";
 import Reservationsnew from './Reservation';
-import Menu from "../components/menu";
+import Menu from "../components/Menu";
 import logo1 from "../../static/img/Kilbourne-Logo-web-ready.png";
 import { 
     Modal, ModalHeader, ModalBody, 

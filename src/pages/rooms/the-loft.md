@@ -5,6 +5,7 @@ prettytitle1: The Loft
 prettytitle2: Second Title
 date: 2022-05-22T04:00:17.785Z
 description: Hotel Kilbourne’s top floor Loft is everything a stay should be.
+featuredroom: true
 featuredimage: /img/hotel-kilbourne-loft-1.jpg
 ---
 Hotel Kilbourne’s top floor Loft is everything a stay should be.

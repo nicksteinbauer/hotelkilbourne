@@ -1,0 +1,164 @@
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://widgets.webrez.com/Widget/jquery-1.9.1.min.js"></script>
+<script src="https://widgets.webrez.com/Widget/jquery-ui.js"></script>
+<script src="https://widgets.webrez.com/Widget/wrp_calendar_14.js"></script>
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css' />
+
+<style>
+	
+	body {
+		font-family: "Open Sans", sans-serif;
+		font-weight: 400;
+	}	
+	.padding-10 {
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}	
+	
+	ul li {
+		margin: 10px 0;
+	}
+	ul li span {
+	  	padding: 0 5px;
+	}
+	
+	.always-flex {
+		display: flex;
+	}
+	.fifty {
+		box-sizing: border-box;
+		flex: 0 0 50%;
+	}
+	label {
+		display: inline-block;
+	}	
+	
+ul li input, ul li select {
+  width: 100%;
+  background: #ebebeb;
+  border-radius: 2px;
+  border: 2px solid #ebebeb;
+  display: block;
+  padding: 4px;
+}
+input, button, select, optgroup, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+ul input[type="submit"] {
+  height: 100%;
+  background: #eacb8f;
+  border-color: #eacb8f;
+}
+	
+</style>
+
+<script>
+
+urlParams = new URLSearchParams(window.location.search);
+myParam = urlParams.get('hotel_id');
+
+setup_parameters =
+	{
+	"hotel_id":"1271",				// required - your WebRezPro hotel id must be entered
+    "date_format":"D M dd, yy", 	// optional - default is 'DD M dd, yy'
+    "default_days_in_advance":"0",	// optional - default is 0 days in advance,
+    "flag_turnoff_autoload_date":"1" // 0 = arrival and departure dates automatically loaded, 1 = not loaded, default is 0
+	};
+	
+	
+	$(document).ready(function () {
+	    
+	    $("#formatted_date_from").datepicker();
+        $("#formatted_date_to").datepicker();
+
+	    
+	});
+	
+	
+	</script>
+
+</head>
+<body>
+
+<div class="reservations">
+        
+        <form id="widget_link" action="https://secure.webrez.com/hotel/1271/?">
+        <input type="hidden" name="table" value=""/>
+        <input type="hidden" name="hotel_id" value=""/>
+        <input type="hidden" name="listing_id" value=""/>
+        <input type="hidden" name="mode" value=""/>
+        <input type="hidden" name="command" value=""/>
+        <input type="hidden" name="nextcommand" value="" />
+
+        
+        <ul>
+          <li class="always-flex">
+            <span class="fifty">
+                <label for="formatted_date_from">Arrival date</label>
+                <input name="formatted_date_from" id="formatted_date_from" value="Arrival date"/>
+                <input type="hidden" name="date_from" id="date_from" value="" />
+            </span>
+            <span class="fifty">
+                <label for="formatted_date_to">Departure date</label>
+                <input name="formatted_date_to" id="formatted_date_to" size="20" value="Depature date" />
+                <input type="hidden" name="date_to" id="date_to" value=""/>
+            </span>
+          </li>
+                    
+          <li class="always-flex">
+              <span class="fifty">
+                  <label for="num_adults"># of adults</label>
+                  <div>
+                      <select name="num_adults" id="num_adults">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      </select>
+                  </div>
+              </span>
+              <span class="fifty">
+                  <label for="num_children"># of children</label>
+                  <div>
+                      <select name="num_children" id="num_children">
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      </select>
+                  </div>
+              </span>
+          </li>
+          <li class="always-flex">
+              <span class="fifty">
+                <label for="access_code">Promo Code</label>
+                <input type="text" name="access_code" id="access_code" size="8"/>
+              </span>
+              <span class="fifty"><input type="submit" value="check availability"/></span>
+          </li>
+          
+        
+          
+        </ul>
+        
+      </form>
+      </div>
+
+
+
+
+</body>
+</html>

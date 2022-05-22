@@ -18,28 +18,33 @@
       border: none;
       font-size: 2.5em;
     }
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        li {
-            margin: 10px 0;
-            span {
-                padding: 0 5px;
-            }
-            input, select {
-                width: 100%;
-                background: $ltgray;
-                border-radius: 2px;
-                border: 2px solid $ltgray;
-                display: block;
-                padding: 4px;
-            }
-        }
-        input[type="submit"] {
-            height: 100%;
-            background: $gold;
-            border-color: $gold;
-        }
+    // ul {
+    //     margin: 0;
+    //     padding: 0;
+    //     list-style: none;
+    //     li {
+    //         margin: 10px 0;
+    //         span {
+    //             padding: 0 5px;
+    //         }
+    //         input, select {
+    //             width: 100%;
+    //             background: $ltgray;
+    //             border-radius: 2px;
+    //             border: 2px solid $ltgray;
+    //             display: block;
+    //             padding: 4px;
+    //         }
+    //     }
+    //     input[type="submit"] {
+    //         height: 100%;
+    //         background: $gold;
+    //         border-color: $gold;
+    //     }
+    // }
+
+    iframe {
+      height: 217px;
+      width: 100%;
     }
   }

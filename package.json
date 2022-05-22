@@ -33,6 +33,7 @@
     "netlify-cms-media-library-uploadcare": "^0.5.10",
     "prop-types": "^15.6.0",
     "react": "^16.8.4",
+    "react-bootstrap": "^2.4.0",
     "react-datepicker": "^4.7.0",
     "react-dom": "^16.8.4",
     "react-google-maps": "^9.4.5",

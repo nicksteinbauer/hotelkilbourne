@@ -4,10 +4,11 @@ import { graphql } from 'gatsby'
 import 
 //Content, 
 { HTMLContent } from '../components/Content'
+
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Layout from '../components/Layout'
 
-//import Features from '../components/Features'
+import BlogTabbed from '../components/BlogTabbed';
 //import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({ image, title, description, content, contentComponent }) => {
@@ -18,6 +19,7 @@ export const IndexPageTemplate = ({ image, title, description, content, contentC
 
 
     <>
+    <section id='hero-container'>
       <div className='top-gradient'></div>
       <div className="full-site-image flex-vertical">
 
@@ -37,7 +39,13 @@ export const IndexPageTemplate = ({ image, title, description, content, contentC
         
       </div>
 
+    </section>
 
+    <section id='tabbed'>
+
+      <BlogTabbed />
+
+    </section>
       
       
       {/*
@@ -45,6 +53,8 @@ export const IndexPageTemplate = ({ image, title, description, content, contentC
         <PageContent className="content" content={content} />
           
       */}
+
+      
       
 
     </>

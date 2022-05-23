@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "gatsby";
 import Reservationsnew from './Reservation';
 import Menu from "../components/Menu";
+
 import logo1 from "../../static/img/Kilbourne-Logo-web-ready.png";
 import { 
     Modal, ModalHeader, ModalBody, 
@@ -14,10 +15,23 @@ const SiteHeader = () => {
     const toggle = () => setModal(!modal);
 
 
+    const [navigate,setNavigate] = useState(false);
+    const changeBackground = () => {  
+      if(window.scrollY >= 2) {
+        setNavigate(true)
+      }else {
+        setNavigate(false)
+      }
+    }
+    if (typeof window !== `undefined`) {
+      window.addEventListener('scroll', changeBackground);
+    }
+
+
   
     return (
       
-        <header className="main-header">
+        <header className={navigate ? 'main-header active' : 'main-header'}>
             <div className="always-flex justify inside-xl">
 
                 <div className="ham-holder flex-vertical"><Menu /></div>

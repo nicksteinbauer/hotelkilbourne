@@ -1,0 +1,82 @@
+// Tabbed styles
+
+#tabbed {
+    margin-top: -149px;
+    background: #fff;
+    position: relative;
+   
+}
+
+.nav-item {
+    flex: 0 0 20%;
+    a {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1em !important;
+        max-width: 150px;
+        margin: 0 auto;
+        @media screen and (min-width: $screen-md) {
+            font-size: 1.3em !important;
+        }
+        
+        span {
+            font-family: $alexbrush;
+            color: $gold;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.nav-link {
+    padding: 30px 0;
+    color: black;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: white;
+    color: black;
+}
+
+.nav-item {
+    border: 1px solid $ltgray;
+    a {
+        cursor: pointer;
+    }
+    a:focus {
+        border-top: transparent;
+    }
+    .nav-link {
+        border-radius: 0;
+        position: relative;
+        top: -10px;
+    }
+    .nav-link.active {
+        border-top: 10px solid $gold;
+    }
+}
+
+.tab-content {
+    h2 {
+        font-size: 2em !important;
+        @media screen and (min-width: $screen-md) {
+            font-size: 2.3em !important;
+        }
+        font-family: $baskerville;
+        color: #000;
+        span {
+            font-family: $alexbrush;
+            color: $gold;
+            font-size: 1.5em;
+        }
+    }
+}

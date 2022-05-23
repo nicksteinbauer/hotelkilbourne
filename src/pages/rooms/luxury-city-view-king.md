@@ -6,6 +6,7 @@ prettytitle2: City View King
 date: 2022-05-23T14:45:50.221Z
 description: Our Luxury City View King features one King Bed and a beautiful
   view of Sandusky’s revitalized downtown district.
+featuredroom: true
 featuredimage: /img/hotel-kilbourne-city-view-king.jpg
 ---
 Our Luxury City View King features one King Bed and a beautiful view of Sandusky’s revitalized downtown district.

@@ -1,4 +1,19 @@
 
+.mobile {
+  display: inline-block;
+  margin-bottom: 20px;
+  @media screen and (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+  @media screen and (min-width: $screen-md) {
+    display: block;
+  }
+}
+
 
 .main-header {
     background: #000;
@@ -9,6 +24,34 @@
     > div {
         height: 60px;
     }
+    .logo-contain {
+      .bheader-logo {
+        opacity: 1;
+        visibility: visible;
+        transition: all .4s ease;
+        position: absolute;
+      }
+      .bheader-logo-minimal {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .4s ease;
+        top: 5px;
+        position: absolute;
+      }
+    }
+}
+
+.main-header.active {
+  .logo-contain {
+    .bheader-logo {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .bheader-logo-minimal {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 
 .logo-contain {
@@ -48,9 +91,9 @@ $translateX: 0;
   height: 100%;
   width: 36px;
 }
-.hamburger.active {
-  //background: $brown;
-}
+// .hamburger.active {
+//   background: $brown;
+// }
 
 .ham-trigger {
   //padding: 0 30px;

@@ -1,7 +1,6 @@
-import React from "react";
-//import VisibilitySensor from "react-visibility-sensor";
+import React, { useState } from 'react';
 
-
+import Reservationsnew from './Reservation';
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
@@ -11,10 +10,20 @@ import paragraphs from 'lines-to-paragraphs'
 import Tab from 'react-bootstrap/Tab';
 import Nav from 'react-bootstrap/Nav';
 
+import { 
+  Modal, ModalHeader, ModalBody, 
+  Button 
+} from 'reactstrap';
+
+
 
   const BlogTabbed = ( {data} ) => {
   
     const { edges: posts } = data.allMarkdownRemark
+
+    const [modal, setModal] = useState(false);
+    const toggle = () => setModal(!modal);
+
 
     
       return (
@@ -31,21 +40,27 @@ import Nav from 'react-bootstrap/Nav';
               
                 <Nav.Item>
                   <Nav.Link eventKey={post.id}>
+                    <div className="flex-vertical">
                     <h2>
                       {post.frontmatter.prettytitle1 ? (
-                        <>
-                        <span>{post.frontmatter.prettytitle1}</span><br/>
-                        </>
+                        <div>{post.frontmatter.prettytitle1}</div>
                       ) : null}
-                      {post.frontmatter.prettytitle2}
+                      {post.frontmatter.prettytitle2 ? (
+                        <div>{post.frontmatter.prettytitle2}</div>
+                      ) : null}
+                      {post.frontmatter.prettytitle3 ? (
+                        <div>{post.frontmatter.prettytitle3}</div>
+                      ) : null}
                     </h2>
+                    </div>
                   </Nav.Link>
                 </Nav.Item>
 
             ))}
           </Nav>
-
+          <div className="padding-20">
           <Tab.Content>
+            
             {posts &&
               posts.map(({ node: post }) => (
               <Tab.Pane eventKey={post.id}>
@@ -54,7 +69,7 @@ import Nav from 'react-bootstrap/Nav';
                         post.frontmatter.featuredpost ? 'is-featured' : ''
                     }`} 
                   >
-                    <div className="fifty">
+                    <div className="fifty padding-20">
                       <PreviewCompatibleImage
                         imageInfo={{
                         image: post.frontmatter.featuredimage,
@@ -67,18 +82,36 @@ import Nav from 'react-bootstrap/Nav';
 
                       <div className="contain padding-20 text-center">
 
-                        <h2 className="h1">
+                        <h2>
                           {post.frontmatter.prettytitle1 ? (
-                            <>
-                            <span>{post.frontmatter.prettytitle1}</span><br/>
-                            </>
+                            <div>{post.frontmatter.prettytitle1}</div>
                           ) : null}
-                          {post.frontmatter.prettytitle2}
+                          {post.frontmatter.prettytitle2 ? (
+                            <div>{post.frontmatter.prettytitle2}</div>
+                          ) : null}
+                          {post.frontmatter.prettytitle3 ? (
+                            <div>{post.frontmatter.prettytitle3}</div>
+                          ) : null}
                         </h2>
                         <div dangerouslySetInnerHTML={{ __html: paragraphs(post.frontmatter.description) }} />
                         
-                        <div className="flex-xl">
-                            <Link className="button thirty3" to={post.fields.slug}>View More</Link>
+                        <div className="flex-xl justify-center">
+                            <Link className="btn-warning button-book btn" to={post.fields.slug}>View Room</Link>
+                            <Button className="button-book" color="warning" size="md" onClick={toggle}>Book Now</Button>
+                            <Modal isOpen={modal} toggle={toggle} >
+                                <ModalHeader toggle={toggle}>
+                                    <span className="title">Reservations</span>
+                                </ModalHeader>
+                                <ModalBody>
+
+                                  <div className="modal-window">
+                                    <div className="padding-10">
+                                      <Reservationsnew />
+                                    </div>
+                                  </div>
+
+                                </ModalBody>
+                            </Modal>
                         </div>
 
                       </div>
@@ -88,8 +121,9 @@ import Nav from 'react-bootstrap/Nav';
                   </article>
               </Tab.Pane>
             ))}
+            
           </Tab.Content>
-
+          </div>
         </Tab.Container>
 
        
@@ -130,6 +164,7 @@ export default () => (
                 templateKey
                 prettytitle1
                 prettytitle2
+                prettytitle3
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 description

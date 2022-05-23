@@ -4,6 +4,7 @@ import Reservationsnew from './Reservation';
 import Menu from "../components/Menu";
 
 import logo1 from "../../static/img/Kilbourne-Logo-web-ready.png";
+import logo2 from "../../static/img/Kilbourne-Logo-web-ready-minimal.png";
 import { 
     Modal, ModalHeader, ModalBody, 
     Button 
@@ -38,10 +39,11 @@ const SiteHeader = () => {
                 <div className="logo-contain">
                 <Link to="/">
                     <img src={logo1} alt="Hotel Kilbourne Logo" className="bheader-logo" />
+                    <img src={logo2} alt="Hotel Kilbourne Logo Minimal" className="bheader-logo-minimal" />
                 </Link>
                 </div>
                 <div className="button-holder flex-vertical">
-                    <Button className="button-book" color="warning" size="md" onClick={toggle}>Book Now</Button>
+                    <Button className="button-book desktop" color="warning" size="md" onClick={toggle}>Book Now</Button>
                 </div>
 
             </div>

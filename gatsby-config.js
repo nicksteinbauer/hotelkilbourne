@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Don\'t Divide Sandusky - Vote No on Issue 2',
+    title: 'Hotel Kilbourne - Boutique Hotel in downtown Sandusky, Ohio',
     description:
-      'Issue 2 would unnecessarily change our current cohesive government structure into political fiefdoms.  Our current at-large City government system is working and change simply doesn’t make sense.',
+      'Set on the stunning waterfront, Hotel Kilbourne is located in the heart of Sandusky, Ohios entertainment scene. A lively location, Kilbourne’s public spaces include Moseley’s Public house and rooftop venue both always populated with visitors and locals alike. Walk around downtown and discover an eclectic variety of restaurants, shopping, activities, and culture.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

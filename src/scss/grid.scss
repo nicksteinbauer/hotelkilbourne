@@ -152,6 +152,10 @@ $ob-blue: #0276b2;
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .flex-xxs {
   display: block;
   @media screen and (min-width: $screen-xxs) {

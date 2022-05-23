@@ -5,11 +5,15 @@ import
 //Content, 
 { HTMLContent } from '../components/Content'
 
+import { Button } from 'reactstrap';
+
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Layout from '../components/Layout'
 
 import BlogTabbed from '../components/BlogTabbed';
 //import BlogRoll from '../components/BlogRoll'
+
+import { Link } from 'react-scroll'
 
 export const IndexPageTemplate = ({ image, title, description, content, contentComponent }) => {
   //const PageContent = contentComponent || Content
@@ -26,6 +30,12 @@ export const IndexPageTemplate = ({ image, title, description, content, contentC
         <div id='hero' className="text-center">
           <h1 className="title">{title}</h1>
           <h2 className="subtitle">{description}</h2>
+          <Button className="button-book" color="warning" size="lg">
+            <Link activeClass="active" className="pointy-button" to="linky-tabbed" spy={true} smooth={true} duration={1000}>
+              View Rooms
+            </Link>
+
+          </Button>
         </div>
 
 
@@ -42,7 +52,7 @@ export const IndexPageTemplate = ({ image, title, description, content, contentC
     </section>
 
     <section id='tabbed'>
-
+      <span className='linky' id='linky-tabbed'> Linky </span>
       <BlogTabbed />
 
     </section>

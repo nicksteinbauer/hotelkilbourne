@@ -51,6 +51,9 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post-gallery"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sub Title", name: "subtitle", widget: "string", required: false}
+      - {label: "Link Text", name: "linktext", widget: "string", required: false}
+      - {label: "Link", name: "link", widget: "string", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Room Associated", name: "roomassociated", widget: "string", required: false}
       - {label: "Featured Image", name: "featuredimage", widget: image}
@@ -67,7 +70,6 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Description, name: description, widget: string}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: Gallery, name: gallery, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}]}
       - file: "src/pages/contact/index.md"
         label: "Contact"
         name: "contact"

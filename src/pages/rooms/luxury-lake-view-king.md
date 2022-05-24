@@ -10,7 +10,7 @@ description: Step inside this luxurious Lake View King Room and experience Lake
   Erie’s true splendor with a King Bed and a panoramic view of Sandusky Bay and
   the surrounding archipelagos.
 featuredroom: true
-featuredimage: /img/lakeviewkinglux-1.jpg
+featuredimage: /img/hotel-kilbourne-lake-view-king.jpg
 ---
 Step inside this luxurious Lake View King Room and experience Lake Erie’s true splendor with a King Bed and a panoramic view of Sandusky Bay and the surrounding archipelagos.
 

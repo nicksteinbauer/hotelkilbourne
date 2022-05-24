@@ -11,6 +11,7 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Layout from '../components/Layout'
 
 import BlogTabbed from '../components/BlogTabbed';
+import BlogGallerySlide from '../components/BlogGallerySlide';
 //import BlogRoll from '../components/BlogRoll'
 
 import { Link } from 'react-scroll'
@@ -57,6 +58,10 @@ export const IndexPageTemplate = ({ image, title, description, content, contentC
 
     </section>
       
+    <section id='gallery'>
+      <span className='linky' id='linky-gallery'> Linky </span>
+      <BlogGallerySlide />
+    </section>
       
       {/*
 

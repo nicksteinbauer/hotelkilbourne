@@ -58,7 +58,10 @@
     position: relative;
     top: 10px;
     z-index: 9;
-    flex: 0 0 260px;
+    flex: 0 0 180px;
+    @media screen and (min-width: $screen-md) {
+      flex: 0 0 260px;
+    }
 }
 
 .button-book {

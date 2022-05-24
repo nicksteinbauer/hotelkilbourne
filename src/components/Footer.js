@@ -1,112 +1,75 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import MapWithAMakredInfoWindow from './MyMapComponentMarker'
+import logo1 from "../../static/img/Kilbourne-Logo-web-ready.png";
+import { Link } from 'gatsby';
 
-import logo from '../img/logo.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+const mailchimp = `
+  <!-- Begin Mailchimp Signup Form -->
+  
+  
+  <div id="mc_embed_signup">
+  <form action="https://hotelkilbourne.us13.list-manage.com/subscribe/post?u=b9bda06c1ed05e0592d547a35&amp;id=978bd4912f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b9bda06c1ed05e0592d547a35_978bd4912f" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-warning button-book btn"></div>
+      </div>
+  </form>
+  </div>
+  
+  `;
+
+
+
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div style={{ maxWidth: '100vw' }} className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
+      <footer>
+        <span id='anchor-findus' className='linky'>Linky</span>
+        <div className='footer-contain'>
+          <div className='footer-inside inside-lg text-center'>
+            <div className='above-footer flex-md'>
+              <div className='fifty'>
+                <h3 className='h1'>Stay in the Know</h3>
+                <p>
+                  Sign up for Hotel Kilbourne's email newsletter for updates, deals and specials. Don't worry about spam, we will protect your personal information
+                </p>
               </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
+              <div className='fifty flex-vertical'>
+              <div className="mailchimp-inner" dangerouslySetInnerHTML={{__html: mailchimp}} />
               </div>
             </div>
           </div>
         </div>
+        
+
+
+      <MapWithAMakredInfoWindow
+        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz85GtAL9QJwco83UH0jUx8lbeS_UNJuk&v=3.exp&libraries=geometry,drawing,places"
+        loadingElement={<div style={{ height: `100%` }} />}
+        containerElement={<div style={{ height: `900px` }} />}
+        mapElement={<div style={{ height: `100%` }} />}
+      />
+
+      <div className='real-footer'>
+        <div className='inside-xl text-center'>
+          <Link to="/">
+              <img src={logo1} alt="Hotel Kilbourne Logo" className="bheader-logo" />
+          </Link>
+          <menu className='footer-menu'>
+            <Link to="/">Home</Link>
+            <Link to="/rooms">Rooms</Link>
+            <Link to="/reservations">Reservations</Link>
+            <Link to="/amenities">Amenities</Link>
+            <Link to="/directions">Directions</Link>
+            <Link to="/contact">Contact</Link>
+          </menu>
+        </div>
+      </div>
+
       </footer>
     )
   }

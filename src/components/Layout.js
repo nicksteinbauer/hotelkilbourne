@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-//import Footer from '../components/Footer'
+import Footer from '../components/Footer'
 import SiteHeader from '../components/SiteHeader'
 import '../scss/style.scss'
 import useSiteMetadata from './SiteMetadata'
@@ -52,7 +52,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <SiteHeader />
       <div>{children}</div>
-      {/*<Footer />*/}
+      <Footer />
     </div>
   )
 }

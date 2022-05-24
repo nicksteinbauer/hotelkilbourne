@@ -2,8 +2,11 @@
 templateKey: index-page
 title: Experience Sandusky
 image: /img/img_4461.png
-topimage: /img/No-Main-Logo.png
+topimage: ""
 description: where a great lake meets a great hotel
+gallery:
+  heading: Waterfront Accommodations
+  description: We are located on Sandusky Bay, with many of our rooms having water views
 ---
 
 Issue 2 would unnecessarily change our current cohesive government structure into political fiefdoms.  Our current at-large City government system is working and change simply doesn’t make sense.

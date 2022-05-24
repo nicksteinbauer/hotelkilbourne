@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Experience Sandusky
-image: /img/img_4461.png
+image: /img/hotel-kilbourne-lobby-1.jpg
 topimage: ""
 description: where a great lake meets a great hotel
 gallery:

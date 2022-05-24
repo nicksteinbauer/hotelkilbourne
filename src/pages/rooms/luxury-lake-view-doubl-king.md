@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post-rooms
-title: Luxury Lake View Doubl King
+title: Luxury Lake View Double King
 prettytitle1: Luxury
 prettytitle2: Lake View
 prettytitle3: Double King

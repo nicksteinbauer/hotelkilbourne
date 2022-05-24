@@ -10,7 +10,7 @@ description: Great for two couples.  Our Lake View Double King Room features two
   King Beds, a huge shower and has a breathtaking view of Sandusky Bay’s Moseley
   Channel, the gateway to Lake Erie.
 featuredroom: true
-featuredimage: /img/lakeviewdoublekinglux-1.jpg
+featuredimage: /img/hotel-kilbourne-lake-view-double-king.jpg
 ---
 Great for two couples.  Our Lake View Double King Room features two King Beds, a huge shower and has a breathtaking view of Sandusky Bay’s Moseley Channel, the gateway to Lake Erie.
 

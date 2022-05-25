@@ -1,0 +1,79 @@
+#page-container {
+    height: 500px;
+    .full-site-image {
+        position: relative;
+        background: url("../../static/img/Hotel-Kilbourne-Rooms-Header.jpg") no-repeat center;
+        #hero {
+            margin-top: 120px;
+        }
+    }
+    
+    
+}
+
+#page-container.single-post {
+    .full-site-image {
+        background: none;
+    }
+    #hero {
+        position: absolute;
+        width: 100%;
+        max-width: none;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.page-content {
+    .gatsby-image-wrapper {
+        border-radius: 0 !important;
+        background: url('../../static/img/fleur-background.png') no-repeat center;
+        background-size: 900px 567px;
+        @media screen and (min-width: $screen-xl) {
+            background-size: 1409px 888px;
+        }
+        overflow: visible;
+        top: 20px;
+        left: 20px;
+        overflow: visible !important;
+        picture {
+            img {
+                transition: all .4s ease !important;
+                transform: translate(-20px, -20px);
+            }
+        }
+    }
+    > div {
+        article:nth-child(2n) {
+            > div:first-child {
+                order: 2;
+            }
+            > div:last-child {
+                order: 1;
+            }
+        }
+    }
+}
+
+.single-post {
+    h2 {
+        font-size: 1.3em !important;
+        @media screen and (min-width: $screen-md) {
+            font-size: 1.7em !important;
+        }
+    }
+    .full-site-image {
+        img {
+            @media screen and (max-width: $screen-lg) {
+                width: 1200px;
+                max-width: none;
+                margin-left: -600px;
+                left: 50%;
+            }
+        }
+    }
+}
+
+.post-content {
+    font-size: 1.2em;
+}

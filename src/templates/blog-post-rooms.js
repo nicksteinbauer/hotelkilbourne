@@ -1,52 +1,54 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+
+//import Slider from "react-slick"
 
 export const RoomPostTemplate = ({
   content,
   contentComponent,
-  description,
-  tags,
+ 
+  featuredimage,
   title,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+<>
+    <section id='page-container' className='single-post'>
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+      <div className='top-gradient'></div>
+      <div className="full-site-image flex-vertical">
+
+          <div id='hero' className="text-center inside-xl">
+              <h1 className="title">{title}</h1>
+              
           </div>
-        </div>
+
+          <PreviewCompatibleImage imageInfo={featuredimage} />
+
+
       </div>
+
     </section>
+
+    <div className='inside-xl section post-content'>
+      <PostContent content={content} />
+    </div>
+
+
+    
+    </>
   )
 }
 
 RoomPostTemplate.propTypes = {
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -62,6 +64,7 @@ const RoomPost = ({ data }) => {
       <RoomPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
+        featuredimage={post.frontmatter.featuredimage}
         description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Room">
@@ -95,6 +98,13 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 840, quality: 60) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         description
         tags
       }

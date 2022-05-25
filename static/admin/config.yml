@@ -42,6 +42,14 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Room", name: "featuredroom", widget: "boolean", required: false}
       - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Gallery 1", name: "gallery1", widget: image, required: false}
+      - {label: "Gallery 2", name: "gallery2", widget: image, required: false}
+      - {label: "Gallery 3", name: "gallery3", widget: image, required: false}
+      - {label: "Gallery 4", name: "gallery4", widget: image, required: false}
+      - {label: "Gallery 5", name: "gallery5", widget: image, required: false}
+      - {label: "Gallery 6", name: "gallery6", widget: image, required: false}
+      - {label: "Gallery 7", name: "gallery7", widget: image, required: false}
+      - {label: "Gallery 8", name: "gallery8", widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "gallery"

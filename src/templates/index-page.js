@@ -28,7 +28,7 @@ export const IndexPageTemplate = ({ image, title, description, content, contentC
       <div className='top-gradient'></div>
       <div className="full-site-image flex-vertical">
 
-        <div id='hero' className="text-center">
+        <div id='hero' className="text-center inside-xl">
           <h1 className="title">{title}</h1>
           <h2 className="subtitle">{description}</h2>
           <Button className="button-book" color="warning" size="lg">

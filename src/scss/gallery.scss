@@ -43,6 +43,7 @@
 
 .slider-nav {
     margin-top: 0;
+    margin-bottom: 40px;
     @media screen and (min-width: $screen-md) {
         margin-top: -100px;
     }
@@ -53,6 +54,9 @@
             margin: 10px;
             padding: 10px;
         }
+        
+    }
+    .slick-current {
         background: url('../../static/img/fleur-background.png') no-repeat center;
         background-size: 952px 600px;
     }

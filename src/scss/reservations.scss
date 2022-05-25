@@ -1,0 +1,48 @@
+.reservations {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }	
+    
+    ul li {
+        margin: 10px 0;
+    }
+    ul li span {
+          padding: 0 5px;
+    }
+    
+    .always-flex {
+        display: flex;
+    }
+    .fifty {
+        box-sizing: border-box;
+        flex: 0 0 50%;
+    }
+    label {
+        display: inline-block;
+    }	
+    
+    ul li input, ul li select {
+    width: 100%;
+    background: #ebebeb;
+    border-radius: 2px;
+    border: 2px solid #ebebeb;
+    display: block;
+    padding: 4px;
+    }
+    input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    }
+    
+    ul input[type="submit"] {
+    height: 100%;
+    background: #eacb8f;
+    border-color: #eacb8f;
+    }
+    
+}
+

@@ -33,7 +33,7 @@ const Footer = class extends React.Component {
           <div className='footer-inside inside-lg text-center'>
             <div className='above-footer flex-md'>
               <div className='fifty'>
-                <h3 className='h1'>Stay in the Know</h3>
+                <h3 className='heading'>Stay in the Know</h3>
                 <p>
                   Sign up for Hotel Kilbourne's email newsletter for updates, deals and specials. Don't worry about spam, we will protect your personal information
                 </p>

@@ -69,7 +69,7 @@ import {
                         post.frontmatter.featuredpost ? 'is-featured' : ''
                     }`} 
                   >
-                    <div className="fifty padding-20">
+                    <div className="fifty padding-20 flex-vertical">
                       <PreviewCompatibleImage
                         imageInfo={{
                         image: post.frontmatter.featuredimage,

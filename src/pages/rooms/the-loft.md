@@ -8,6 +8,14 @@ date: 2022-05-22T04:00:17.785Z
 description: Hotel Kilbourne’s top floor Loft is everything a stay should be.
 featuredroom: true
 featuredimage: /img/hotel-kilbourne-loft-1.jpg
+gallery1: /img/hotel-kilbourne-loft-1-gallery.jpg
+gallery2: /img/hotel-kilbourne-loft-2-gallery.jpg
+gallery3: /img/hotel-kilbourne-loft-3-gallery.jpg
+gallery4: /img/hotel-kilbourne-loft-5-gallery.jpg
+gallery5: /img/hotel-kilbourne-loft-6-gallery.jpg
+gallery6: /img/hotel-kilbourne-loft-7-gallery.jpg
+gallery7: /img/hotel-kilbourne-loft-8-gallery.jpg
+gallery8: /img/hotel-kilbourne-loft-9-gallery.jpg
 ---
 Hotel Kilbourne’s top floor Loft is everything a stay should be.
 

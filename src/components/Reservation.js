@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
-import $ from 'jquery';
-import 'jquery-ui-bundle';
-import 'jquery-ui-bundle/jquery-ui.css';
+
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 
 
-const reservation = `
-<script>
+const reservation = `<script>
 setup_parameters =
 {
     "hotel_id":"1953",				// required - your WebRezPro hotel id must be entered
@@ -14,25 +14,11 @@ setup_parameters =
     "flag_turnoff_autoload_date":"1" // 0 = arrival and departure dates automatically loaded, 1 = not loaded, default is 0
 };
 
-
-
-
 </script>`;
 
-
-
 function Reservationsnew() {
-
-
-  
-
-  useEffect(() => {
-      $(function () {
-        $("#formatted_date_from").datepicker();
-        $("#formatted_date_to").datepicker();
-      });
-    });
-
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
    
   return (
       <div className="reservations">
@@ -54,12 +40,12 @@ function Reservationsnew() {
           <li className="always-flex">
             <span className="fifty">
                 <label htmlFor="formatted_date_from">Arrival date</label>
-                <input name="formatted_date_from" id="formatted_date_from" value="Arrival date"/>
+                <DatePicker className="datepicker" name="formatted_date_from" id="formatted_date_from"  selected={startDate} onChange={(date) => setStartDate(date)} />
                 <input type="hidden" name="date_from" id="date_from" value="" />
             </span>
             <span className="fifty">
                 <label htmlFor="formatted_date_to">Departure date</label>
-                <input name="formatted_date_to" id="formatted_date_to" size="20" value="Depature date" />
+                <DatePicker className="datepicker" name="formatted_date_to" id="formatted_date_to"  selected={endDate} onChange={(date) => setEndDate(date)} />
                 <input type="hidden" name="date_to" id="date_to" value=""/>
             </span>
           </li>

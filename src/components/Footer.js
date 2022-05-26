@@ -62,7 +62,6 @@ const Footer = class extends React.Component {
           <menu className='footer-menu'>
             <Link to="/">Home</Link>
             <Link to="/rooms">Rooms</Link>
-            <Link to="/reservations">Reservations</Link>
             <Link to="/amenities">Amenities</Link>
             <Link to="/directions">Directions</Link>
             <Link to="/contact">Contact</Link>

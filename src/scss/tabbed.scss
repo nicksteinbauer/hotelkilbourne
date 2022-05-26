@@ -37,6 +37,13 @@
     }
 }
 
+.nav.nav-pills {
+    display: block;
+    @media screen and (min-width: $screen-xs) {
+        display: flex;
+    }
+}
+
 .nav-item {
     flex: 0 0 20%;
     a {

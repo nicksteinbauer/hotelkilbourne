@@ -51,6 +51,17 @@ h3.heading {
     }
 }
 
+h3.heading-brush {
+    font-weight: 400;
+    padding: 5px;
+    color: $gold;
+    font-family: $alexbrush;
+    font-size: 2.0em !important;
+    @media screen and (min-width: $screen-md) {
+        font-size: 2.5em !important;
+    }
+}
+
 
 
 h4 {

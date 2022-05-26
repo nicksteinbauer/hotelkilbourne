@@ -40,7 +40,6 @@ function NavBoot() {
         <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/rooms">Rooms</Link></li>
-            <li><Link to="/reservations">Reservations</Link></li>
             <li><Link to="/amenities">Amenities</Link></li>
             <li><Link to="/directions">Directions</Link></li>
             <li><Link to="/contact">Contact</Link></li>

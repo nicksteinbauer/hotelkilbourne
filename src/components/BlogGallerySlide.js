@@ -80,7 +80,7 @@ class BlogGallerySlide extends React.Component {
                             <div className='overlay text-center center-vertically'>
                             {post.frontmatter.featuredimage ? (
                                 <div className='inside-lg'>
-                                    <h2>{post.frontmatter.title}</h2>
+                                    <h3 className='heading-brush'>{post.frontmatter.title}</h3>
                                     <h4 className='adjust'>{post.frontmatter.subtitle}</h4>
                                     {post.frontmatter.linktext ? (
                                     <div className='text-center'><Link className='btn-warning button-book btn' to={post.frontmatter.link}>{post.frontmatter.linktext}</Link></div>

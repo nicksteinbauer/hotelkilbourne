@@ -5,10 +5,11 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const ContactPageTemplate = ({ title, content, contentComponent, featuredimage }) => {
+export const AmenitiesPageTemplate = ({ title, content, contentComponent, featuredimage }) => {
   const PageContent = contentComponent || Content
 
   return (
+    
     <>
     <section id='page-container' className='single-post'>
      
@@ -21,11 +22,12 @@ export const ContactPageTemplate = ({ title, content, contentComponent, featured
           </div>
 
           <PreviewCompatibleImage
-            imageInfo={{
-              image: featuredimage,
-              alt: "background",
-            }}
-          />
+          imageInfo={{
+            image: featuredimage,
+            alt: "background",
+          }}
+        />
+
 
       </div>
 
@@ -34,22 +36,23 @@ export const ContactPageTemplate = ({ title, content, contentComponent, featured
       <PageContent className="content" content={content} />
 
     </>
+ 
   )
 }
 
-ContactPageTemplate.propTypes = {
+AmenitiesPageTemplate.propTypes = {
   featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const ContactPage = ({ data }) => {
+const AmenitiesPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <ContactPageTemplate
+      <AmenitiesPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -59,14 +62,14 @@ const ContactPage = ({ data }) => {
   )
 }
 
-ContactPage.propTypes = {
+AmenitiesPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default ContactPage
+export default AmenitiesPage
 
-export const contactPageQuery = graphql`
-  query ContactPage($id: String!) {
+export const amenitiesPageQuery = graphql`
+  query AmenitiesPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

@@ -65,10 +65,10 @@
     .full-site-image {
         img {
             @media screen and (max-width: $screen-lg) {
-                width: 1200px;
+                width: 1200px !important;
                 max-width: none;
                 margin-left: -600px;
-                left: 50%;
+                left: 50% !important;
             }
         }
     }
@@ -76,4 +76,8 @@
 
 .post-content {
     font-size: 1.2em;
+}
+
+.inline-block {
+    display: inline-block !important;
 }

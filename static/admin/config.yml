@@ -94,4 +94,12 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/directions/index.md"
+        label: "Directions"
+        name: "directions"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "directions-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
      

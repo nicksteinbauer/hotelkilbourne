@@ -32,8 +32,12 @@ export const AmenitiesPageTemplate = ({ title, content, contentComponent, featur
       </div>
 
     </section>
+
+    <section className='inside-md text-center padding-40 post-content'>
              
       <PageContent className="content" content={content} />
+
+    </section>
 
     </>
  

@@ -5,10 +5,11 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const ContactPageTemplate = ({ title, content, contentComponent, featuredimage }) => {
+export const DirectionsPageTemplate = ({ title, content, contentComponent, featuredimage }) => {
   const PageContent = contentComponent || Content
 
   return (
+    
     <>
     <section id='page-container' className='single-post'>
      
@@ -21,16 +22,17 @@ export const ContactPageTemplate = ({ title, content, contentComponent, featured
           </div>
 
           <PreviewCompatibleImage
-            imageInfo={{
-              image: featuredimage,
-              alt: "background",
-            }}
-          />
+          imageInfo={{
+            image: featuredimage,
+            alt: "background",
+          }}
+        />
+
 
       </div>
 
     </section>
-             
+
     <section className='inside-md text-center padding-40 post-content'>
              
       <PageContent className="content" content={content} />
@@ -38,22 +40,23 @@ export const ContactPageTemplate = ({ title, content, contentComponent, featured
     </section>
 
     </>
+ 
   )
 }
 
-ContactPageTemplate.propTypes = {
+DirectionsPageTemplate.propTypes = {
   featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const ContactPage = ({ data }) => {
+const DirectionsPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <ContactPageTemplate
+      <DirectionsPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -63,14 +66,14 @@ const ContactPage = ({ data }) => {
   )
 }
 
-ContactPage.propTypes = {
+DirectionsPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default ContactPage
+export default DirectionsPage
 
-export const contactPageQuery = graphql`
-  query ContactPage($id: String!) {
+export const directionsPageQuery = graphql`
+  query DirectionsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

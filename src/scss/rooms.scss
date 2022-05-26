@@ -63,6 +63,7 @@
         }
     }
     .full-site-image {
+        height: 100%;
         img {
             @media screen and (max-width: $screen-lg) {
                 width: 1200px !important;

@@ -10,6 +10,8 @@ description: The Luxury City View King Suite is perched above Sandusky’s
   historic urban corridor boasting a King Bed and Queen-sized Pull-Out Sofa.
 featuredroom: true
 featuredimage: /img/hotel-kilbourne-city-view-suite.jpg
+gallery1: /img/hotel-kilbourne-city-view-king-suite-gallery-1.jpg
+gallery2: /img/hotel-kilbourne-city-view-king-suite-gallery-2.jpg
 ---
 The Luxury City View King Suite is perched above Sandusky’s historic urban corridor boasting a King Bed and Queen-sized Pull-Out Sofa.
 

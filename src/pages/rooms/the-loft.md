@@ -5,7 +5,12 @@ prettytitle1: The Loft
 prettytitle2: Luxury Mini-Suite
 tabkey: theloft
 date: 2022-06-22T04:00:17.785Z
-description: Hotel Kilbourne’s top floor Loft is everything a stay should be.
+description: Treat yourself to a luxurious stay in our most private, spacious,
+  and sexy room. A favorite for some of our celebrity guests. Located on our top
+  floor, just steps away from Moseley’s Rooftop Bar. The loft features a king
+  size bed crowned with an elegant white dove mattress, an electric fireplace, a
+  lounge area complete with a sofa and wet bar, an oversized shower, and
+  splendid decor among all of our other high standard amenities.
 featuredroom: true
 featuredimage: /img/hotel-kilbourne-loft-1.jpg
 gallery1: /img/hotel-kilbourne-loft-1-gallery.jpg

@@ -1,9 +1,9 @@
 ---
 templateKey: blog-post-rooms
-title: Luxury Lake View Double King
-prettytitle1: Luxury
-prettytitle2: Lake View
-prettytitle3: Double King
+title: Lake View - Double King Room
+prettytitle1: Lake View
+prettytitle2: Double King Room
+prettytitle3: ""
 tabkey: lakeviewdoubleking
 date: 2022-05-24T18:20:38.909Z
 description: Great for two couples.  Our Lake View Double King Room features two

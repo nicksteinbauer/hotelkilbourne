@@ -16,3 +16,5 @@ gallery1: /img/hotel-kilbourne-city-view-king-gallery-1.jpg
 gallery2: /img/hotel-kilbourne-city-view-king-gallery-2.jpg
 ---
 Get comfy and cozy… whether it’s a night out or an evening in, this King Size bed will fit just right.   Enjoy our high standard amenities with a view of historic Downtown Sandusky.
+
+[View All Amenities](/amenities)

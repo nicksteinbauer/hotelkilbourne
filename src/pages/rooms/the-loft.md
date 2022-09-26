@@ -23,3 +23,5 @@ gallery7: /img/hotel-kilbourne-loft-8-gallery.jpg
 gallery8: /img/hotel-kilbourne-loft-9-gallery.jpg
 ---
 Talk about a room with a view… pull back the curtains, Life on the Lake awaits! This room features a King Size Bed and Chaise Lounge, along with all of our other high standard amenities.
+
+[View All Amenities](/amenities)

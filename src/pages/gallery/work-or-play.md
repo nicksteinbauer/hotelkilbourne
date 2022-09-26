@@ -1,9 +1,9 @@
 ---
 templateKey: blog-post-gallery
-title: Work or Play
-subtitle: Whether you're in town for work or play, Hotel Kilbourne is here to relax
-linktext: The Loft
-link: /rooms/the-loft
+title: Hotel Kilbourne
+subtitle: exactly where you need to be
+linktext: About
+link: /about
 date: 2022-05-24T13:35:48.061Z
 roomassociated: home
 featuredimage: /img/hotel-kilbourne-loft-4.jpg

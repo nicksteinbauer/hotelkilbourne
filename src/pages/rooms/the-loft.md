@@ -2,9 +2,9 @@
 templateKey: blog-post-rooms
 title: The Loft
 prettytitle1: The Loft
-prettytitle2: ""
+prettytitle2: Luxury Mini-Suite
 tabkey: theloft
-date: 2022-05-22T04:00:17.785Z
+date: 2022-06-22T04:00:17.785Z
 description: Hotel Kilbourne’s top floor Loft is everything a stay should be.
 featuredroom: true
 featuredimage: /img/hotel-kilbourne-loft-1.jpg

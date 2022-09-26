@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Experience Sandusky
+title: Experience Downtown Sandusky
 image: /img/hotel-kilbourne-lobby-1.jpg
 topimage: ""
-description: where a great lake meets a great hotel
+description: a waterfront boutique hotel
 gallery:
   heading: Waterfront Accommodations
   description: We are located on Sandusky Bay, with many of our rooms having water views

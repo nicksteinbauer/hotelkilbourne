@@ -15,3 +15,5 @@ gallery1: /img/hotel-kilbourne-lake-view-king-gallery-1.jpg
 gallery2: /img/hotel-kilbourne-lake-view-king-gallery-2.jpg
 ---
 Talk about a room with a view… pull back the curtains, Life on the Lake awaits! This room features a King Size Bed and Chaise Lounge, along with all of our other high standard amenities.
+
+[View All Amenities](/amenities)

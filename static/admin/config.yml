@@ -126,4 +126,11 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
           - {label: "Body", name: "body", widget: "markdown"}
-     
+     - file: "src/pages/oh-taco/index.md"
+        label: "Oh-Taco"
+        name: "oh-taco"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "oh-taco-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
+          - {label: "Body", name: "body", widget: "markdown"}

@@ -6,5 +6,5 @@ linktext: Amenities
 link: /amenities
 date: 2022-05-24T13:29:11.686Z
 roomassociated: home
-featuredimage: /img/town-filler.jpg
+featuredimage: /img/jackson-street.jpg
 ---

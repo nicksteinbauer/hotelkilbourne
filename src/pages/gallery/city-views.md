@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post-gallery
-title: City Views
-subtitle: Some of our rooms view the beautiful Sandusky skyline
-linktext: More Amenities
+title: Simply the Best
+subtitle: because you're our favorite
+linktext: Amenities
 link: /amenities
 date: 2022-05-24T13:29:11.686Z
 roomassociated: home

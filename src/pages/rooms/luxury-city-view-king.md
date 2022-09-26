@@ -1,9 +1,9 @@
 ---
 templateKey: blog-post-rooms
-title: Luxury City View King
-prettytitle1: Luxury
-prettytitle2: City View
-prettytitle3: King
+title: City View - King Room
+prettytitle1: City View
+prettytitle2: King Room
+prettytitle3: ""
 tabkey: cityviewking
 date: 2022-05-23T14:45:50.221Z
 description: Our Luxury City View King features one King Bed and a beautiful

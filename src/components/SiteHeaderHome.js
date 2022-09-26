@@ -32,7 +32,7 @@ const SiteHeaderHome = () => {
   
     return (
       
-        <header className={navigate ? 'main-header active' : 'main-header'}>
+        <header className={navigate ? 'main-header homepage active' : 'main-header homepage'}>
             <div className="always-flex justify inside-xl">
 
                 <div className="ham-holder flex-vertical"><Menu /></div>

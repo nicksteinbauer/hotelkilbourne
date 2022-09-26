@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Reservationsnew from './Reservation';
 import facebook from "../../static/img/social/facebook.svg";
 import instagram from "../../static/img/social/instagram.svg";
-import twitter from "../../static/img/social/twitter.svg";
+//import twitter from "../../static/img/social/twitter.svg";
 
 import { 
     Modal, ModalHeader, ModalBody, 

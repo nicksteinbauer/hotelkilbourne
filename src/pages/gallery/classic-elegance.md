@@ -1,10 +1,10 @@
 ---
 templateKey: blog-post-gallery
-title: Classic Elegance
-subtitle: Our rooms are detailed in a classic elegance with a modern flair
+title: Oh Taco
+subtitle: Tacos, Tequila, & the Best Damn Margaritas
 linktext: View The Loft
-link: /rooms/the-loft
+link: /oh-taco
 date: 2022-05-24T13:26:57.606Z
 roomassociated: home
-featuredimage: /img/hotel-kilbourne-loft-9.jpg
+featuredimage: /img/oh-taco.jpg
 ---

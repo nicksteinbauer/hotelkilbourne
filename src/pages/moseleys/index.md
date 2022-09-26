@@ -8,4 +8,6 @@ Join us on the rooftop for a fun tiki vibe all summer long.  Located on the top
 
 Moseley’s Rooftop Bar is open through New Years Eve, before we go on winter break.  We will open again for the season around Memorial Day.
 
-**Be a Rooftopper.  Everyone is doing it…**
+**Be a Rooftopper.  Everyone is doing it…**  
+
+**Rooftopper** (*plural* **[rooftoppers](https://en.wiktionary.org/wiki/rooftoppers#English "rooftoppers")) Noun:**([slang](https://en.wiktionary.org/wiki/Appendix:Glossary#slang "Appendix:Glossary")) An individual who takes [selfies](https://en.wiktionary.org/wiki/selfie "selfie") or videos with [expansive](https://en.wiktionary.org/wiki/expansive "expansive") and [vertiginous](https://en.wiktionary.org/wiki/vertiginous "vertiginous") urban views and [cityscapes](https://en.wiktionary.org/wiki/cityscape "cityscape"), from locations usually , but not always restricted to the public.

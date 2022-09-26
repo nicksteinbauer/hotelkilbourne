@@ -41,6 +41,9 @@ function NavBoot() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/rooms">Rooms</Link></li>
             <li><Link to="/amenities">Amenities</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/oh-taco">Oh-Taco</Link></li>
+            <li><Link to="/moseleys">Moseleys</Link></li>
             <li><Link to="/directions">Directions</Link></li>
             <li><Link to="/contact">Contact</Link></li>
         </ul>
@@ -49,7 +52,6 @@ function NavBoot() {
                 
                 <a target="_blank" rel="noreferrer" href="https://www.facebook.com/hotelkilbourne"><img src={facebook} alt="Facebook Link" /></a>
                 <a target="_blank" rel="noreferrer" href="https://www.instagram.com/hotelkilbourne/?hl=en"><img src={instagram} alt="Instagram Link" /></a>
-                <a target="_blank" rel="noreferrer" href="https://twitter.com/hotelkilbourne"><img src={twitter} alt="Twitter Link" /></a>
                 
             </div>
         </div>

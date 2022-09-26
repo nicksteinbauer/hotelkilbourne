@@ -15,3 +15,5 @@ gallery1: /img/hotel-kilbourne-lake-view-double-king-gallery-1.jpg
 gallery2: /img/hotel-kilbourne-lake-view-double-king-gallery-2.jpg
 ---
 Sometimes we all need a little space… this room has it. With 2 King Size beds, our largest bathroom, high standard amenities, and a spectacular view of Sandusky Bay and Jackson Street Pier.
+
+[View All Amenities](/amenities)

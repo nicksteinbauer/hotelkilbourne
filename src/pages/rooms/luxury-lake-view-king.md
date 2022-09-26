@@ -1,9 +1,9 @@
 ---
 templateKey: blog-post-rooms
-title: Luxury Lake View King
-prettytitle1: Luxury
-prettytitle2: Lake View
-prettytitle3: King
+title: Lake View - King Micro-Suite
+prettytitle1: Lake View
+prettytitle2: King Micro-Suite
+prettytitle3: ""
 tabkey: lakeviewking
 date: 2022-05-24T18:23:31.707Z
 description: Step inside this luxurious Lake View King Room and experience Lake

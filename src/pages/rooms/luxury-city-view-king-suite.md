@@ -5,7 +5,7 @@ prettytitle1: City View
 prettytitle2: King Mini-Suite
 prettytitle3: ""
 tabkey: cityviewkingsuite
-date: 2022-05-24T18:18:07.493Z
+date: 2022-05-01T18:18:07.493Z
 description: The Luxury City View King Suite is perched above Sandusky’s
   historic urban corridor boasting a King Bed and Queen-sized Pull-Out Sofa.
 featuredroom: true

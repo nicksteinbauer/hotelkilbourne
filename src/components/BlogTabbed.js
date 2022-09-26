@@ -33,7 +33,7 @@ import {
        
         <div className="tabbed-container">
 
-        <Tab.Container id="left-tabs-example" defaultActiveKey="lakeviewking">
+        <Tab.Container id="left-tabs-example" defaultActiveKey="theloft">
           <Nav variant="pills">
             {posts &&
               posts.map(({ node: post }) => (

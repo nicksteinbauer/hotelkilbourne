@@ -7,8 +7,8 @@ import
 
 import { Button } from 'reactstrap';
 
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import Layout from '../components/Layout'
+//import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import LayoutHome from '../components/LayoutHome'
 
 import BlogTabbed from '../components/BlogTabbed';
 import BlogGallerySlide from '../components/BlogGallerySlide';
@@ -40,12 +40,12 @@ export const IndexPageTemplate = ({ image, title, description, content, contentC
         </div>
 
 
-        <PreviewCompatibleImage
+        {/* <PreviewCompatibleImage
           imageInfo={{
             image: image.childImageSharp.fluid.src,
             alt: "background",
           }}
-        />
+        /> */}
 
         
       </div>
@@ -94,7 +94,7 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   const { markdownRemark: post } = data
   return (
-    <Layout>
+    <LayoutHome>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
@@ -102,7 +102,7 @@ const IndexPage = ({ data }) => {
         contentComponent={HTMLContent}
         content={post.html}
       />
-    </Layout>
+    </LayoutHome>
   )
 }
 

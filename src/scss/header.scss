@@ -63,6 +63,16 @@
       flex: 0 0 260px;
     }
 }
+.logo-contain.home-logo {
+  .bheader-logo {
+    @media screen and (min-width: $screen-md) {
+      width: 363px;
+      margin-left: -181.5px;
+      left: 50%;
+      position: fixed;
+    }
+  }
+}
 
 .button-book {
     background-color: $gold;

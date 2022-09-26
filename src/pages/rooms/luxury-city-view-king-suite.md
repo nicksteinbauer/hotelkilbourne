@@ -1,9 +1,9 @@
 ---
 templateKey: blog-post-rooms
-title: Luxury City View King Suite
-prettytitle1: Luxury
-prettytitle2: City View
-prettytitle3: King Suite
+title: City View - King Mini-Suite
+prettytitle1: City View
+prettytitle2: King Mini-Suite
+prettytitle3: ""
 tabkey: cityviewkingsuite
 date: 2022-05-24T18:18:07.493Z
 description: The Luxury City View King Suite is perched above Sandusky’s

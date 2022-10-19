@@ -2,7 +2,7 @@
 templateKey: oh-taco-page
 path: /oh-taco
 title: Oh-Taco
-featuredimage: /img/hotel-kilbourne-lobby-6-wide.jpg
+featuredimage: /img/oh-taco-new.jpg
 ---
 Discover Oh Taco, an authentic Mexican restaurant and tequila bar on the first floor of Hotel Kilbourne. With over 75 different tequilas, it is one of the largest selections in Ohio.  With quite the variety to choose from, Oh Taco is known for the "best damn margaritas” including the $100 margarita, El Dorado,  Tequila not your thing? No problemo! We have all your favorite spirits too. 
 

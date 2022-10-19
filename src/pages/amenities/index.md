@@ -2,7 +2,7 @@
 templateKey: amenities-page
 path: /amenities
 title: Amenities
-featuredimage: /img/hotel-kilbourne-lobby-6-wide.jpg
+featuredimage: /img/Hotel-Kilbourne-Rooms-Header.jpg
 ---
 Whether you’re  staying in a stunning lake view, beautiful city view, or The Loft, you can be sure your room will include luxury bedding and towels, mini fridge, complimentary water, HD TV, free high-speed internet, make-up wipes, hair dryer, earplugs, iron and mini ironing board.  Every room also includes snacks, sodas and spirits for purchase.
 

@@ -1,7 +1,7 @@
 ---
-templateKey: moseleys-page
-path: /moseleys
-title: Rooftop Bar
+templateKey: rooftop-bar-page
+path: /rooftop-bar
+title: Moseleys Rooftop Bar
 featuredimage: /img/moseleys-rooftop-logo.jpg
 ---
 Join us on the rooftop for a fun tiki vibe all summer long.  Located on the top floor of Hotel Kilbourne.  Take a ride in our elevator for a birds-eye view of Sandusky Bay.  Enjoy sipping on one of our handcrafted cocktails, frozen drinks or get warm and toasty with us in the fall with spiked hot apple cider or hot chocolate sitting by the fire.  Don’t let the weather keep you away.  Moseley’s Rooftop Bar has a great indoor bar to watch the storms roll in.

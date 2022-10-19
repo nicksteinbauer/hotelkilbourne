@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import BlogGalleryTaco from '../components/BlogGalleryTaco'
 
 export const OhTacoPageTemplate = ({ title, content, contentComponent, featuredimage }) => {
   const PageContent = contentComponent || Content
@@ -37,6 +38,10 @@ export const OhTacoPageTemplate = ({ title, content, contentComponent, featuredi
              
       <PageContent className="content" content={content} />
 
+    </section>
+
+    <section className='inside-lg text-center padding-40 post-content'>
+      <BlogGalleryTaco />
     </section>
 
     </>

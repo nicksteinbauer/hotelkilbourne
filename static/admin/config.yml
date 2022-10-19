@@ -118,11 +118,11 @@ collections:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
         - {label: "Body", name: "body", widget: "markdown"}
-    - file: "src/pages/moseleys/index.md"
-      label: "Moseleys"
-      name: "moseleys"
+    - file: "src/pages/rooftop-bar/index.md"
+      label: "Moseleys Rooftop Bar"
+      name: "rooftop-bar"
       fields:
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "moseleys-page"}
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "rooftop-bar-page"}
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
         - {label: "Body", name: "body", widget: "markdown"}

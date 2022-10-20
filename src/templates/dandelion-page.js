@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import BlogGalleryDandelion from '../components/BlogGalleryDandelion'
 
 export const DandelionPageTemplate = ({ title, content, contentComponent, featuredimage }) => {
   const PageContent = contentComponent || Content
@@ -34,9 +35,11 @@ export const DandelionPageTemplate = ({ title, content, contentComponent, featur
     </section>
 
     <section className='inside-md text-center padding-40 post-content'>
-             
       <PageContent className="content" content={content} />
+    </section>
 
+    <section className='inside-lg text-center padding-40 post-content'>
+      <BlogGalleryDandelion />
     </section>
 
     </>

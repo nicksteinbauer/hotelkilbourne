@@ -44,6 +44,7 @@ function NavBoot() {
             <li><Link to="/about">About</Link></li>
             <li><Link to="/oh-taco">Oh-Taco</Link></li>
             <li><Link to="/rooftop-bar">Rooftop Bar</Link></li>
+            <li><Link to="/dandelion">Dandelion</Link></li>
             <li><Link to="/directions">Directions</Link></li>
             <li><Link to="/contact">Contact</Link></li>
         </ul>

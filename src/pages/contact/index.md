@@ -2,7 +2,7 @@
 templateKey: contact-page
 path: /contact
 title: Contact Us
-featuredimage: /img/hotel-kilbourne-lobby-5-wide.jpg
+featuredimage: /img/kilbourne-contact-banner.jpg
 ---
 Hotel Kilbourne\
 223 West Water Street\
